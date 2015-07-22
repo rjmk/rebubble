@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rebubble Tests</title>
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.18.0.css">
+  </head>
+  <body>
+    <div id = "container">
+      <div id = "header-container" class="container top horizontal">
+        <ul class="menu nav nav-bar">
+          <li> 1 </li>
+          <li> 2 is <span class = "blue"> number 2 </span> </li>
+          <li> 3 </li>
+        </ul>
+      </div>
+      <div id = "content"  onclick="blogHandle(this, event)">
+        <div class = "blog blog-post">
+          <div class="blog-header">
+            <div class="blog-title">
+              <h2 id ="title">BLOG TITLE</h2>
+            </div>
+            <div class="blog-pic">
+              <img src="" alt="logo" />
+            </div>
+          </div>
+          <div class="blog-post blog-content">
+            HLL WRLD
+          </div>
+        </div>
+      </div>
+      <div id = "footer">
+        <h3> YEAH <span id=clicksy class=click-clack>YEAH YEAH</span> </h3>
+      </div>
+    </div>
+    <div id="click"></div>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blanket.js/1.1.4/blanket.min.js"></script>
+    <script src="index.js" data-cover charset="utf-8"></script>
+    <script src="test.js" charset="utf-8"></script>
+  </body>
+</html>
